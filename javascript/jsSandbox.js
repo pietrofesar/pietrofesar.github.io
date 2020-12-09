@@ -32,11 +32,10 @@ xhr.onreadystatechange= function() {
         if((xhr.status >= 200 && xhr.status < 300) || (xhr.status === 304)){
             console.log(xhr.status);
             console.log(xhr.responseText);
-            alert(xhr.responseText);
         }
     }
 }
 xhr.open('get', 'descriptiveWords.txt', true);
 xhr.send(null);
-
+console.log(xhr.responseText);
 console.log('wtf');

@@ -24,7 +24,7 @@ document.write(bPara + redText + ePara);
 
 */
 
-
+console.log('wtf');
 
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange= function() {

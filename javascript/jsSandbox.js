@@ -38,4 +38,6 @@ xhr.onreadystatechange= function() {
 xhr.open('get', 'descriptiveWords.txt', true);
 xhr.send(null);
 console.log(xhr.responseText);
+alert(xhr.responseText);
+document.getElementById('demo').innerHTML=xhr.responseText;
 console.log('wtf');

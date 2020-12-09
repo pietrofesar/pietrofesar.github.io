@@ -11,5 +11,5 @@ xhr.onreadystatechange = function() {
     }
 }
 console.log('line 41');
-xhr.open('get', 'descriptiveWords.txt', true);
+xhr.open('post', 'descriptiveWords.txt', true);
 xhr.send(null);

@@ -34,13 +34,13 @@ function loadDoc(url, cFunction) {
 }
 
 // function for a doc, define another for another doc
-function myFunction(xhr) {
-    var descriptiveWords = xhr.responseText.split(' ');
-    for (var i = 0; i < descriptiveWords.length; i++){
-        console.log(descriptiveWords[i]);
-    }
-    document.getElementById('demo').innerHTML = xhr.responseText;
+function createList(xhr) {
+    var wordList = xhr.responseText.split(' ');
+    return wordList;
 }
 
-loadDoc('descriptiveWords.txt', myFunction);
+var descriptiveWords = loadDoc('descriptiveWords.txt', createList);
+var thingWords = loadDoc('thingWord.txt', createList);
 
+alert(descriptiveWords);
+alert (thingWords);

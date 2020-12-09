@@ -13,3 +13,5 @@ xhr.onreadystatechange = function() {
 console.log('line 41');
 xhr.open('get','descriptiveWords.txt', true);
 xhr.send(null);
+console.log('line 16');
+console.log(xhr.responseText);

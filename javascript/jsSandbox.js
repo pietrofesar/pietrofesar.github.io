@@ -36,6 +36,7 @@ function loadDoc(url, cFunction) {
 // function for a doc, define another for another doc
 function createList(xhr) {
     var wordList = xhr.responseText.split(' ');
+    console.log(wordList);
     return wordList;
 }
 

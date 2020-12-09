@@ -35,9 +35,9 @@ function loadDoc(url, cFunction) {
 
 // function for a doc, define another for another doc
 function myFunction(xhr) {
-    var descriptiveWords = xhr.responseText.split(' ');
-    console.log(descriptiveWords);
-  document.getElementById('demo').innerHTML = xhr.responseText;
+    var dw = xhr.responseText;
+    console.log(dw.split());
+    document.getElementById('demo').innerHTML = xhr.responseText;
 }
 
 loadDoc('descriptiveWords.txt', myFunction);

@@ -1,4 +1,5 @@
 /*
+// this example is for a single doc
 var xhr = new XMLHttpRequest();
 xhr.onreadystatechange = function() {
     if (xhr.readyState === 4) {
@@ -17,7 +18,7 @@ xhr.send(null);
 */
 
 
-
+// this example is for multiple docs
 function loadDoc(url, cFunction) {
     var xhr = new XMLHttpRequest();
     xhr.onreadystatechange = function() {
@@ -32,6 +33,7 @@ function loadDoc(url, cFunction) {
     xhr.send();
 }
 
+// function for a doc, define another for another doc
 function myFunction(xhr) {
   document.getElementById('demo').innerHTML = xhr.responseText;
 }

@@ -25,7 +25,7 @@ function loadDoc(url, cFunction) {
         if(xhr.readyState === 4) {
             console.log('line 4');
             if((xhr.status >= 200 && xhr.status < 300) || (xhr.status === 304)){
-                return cFunction(this); 
+                cFunction(this); 
             }
         }
     };
@@ -34,14 +34,12 @@ function loadDoc(url, cFunction) {
 }
 
 // function for a doc, define another for another doc
-function createList(xhr) {
-    var wordList = xhr.responseText.split(' ');
-    console.log(wordList);
-    return wordList;
+function myFunction(xhr) {
+    var descriptiveWords = xhr.responseText.split(' ');
+    document.getElementById('demo').innerHTML = xhr.responseText;
 }
 
-var descriptiveWords = loadDoc('descriptiveWords.txt', createList);
-var thingWords = loadDoc('thingWord.txt', createList);
+loadDoc('descriptiveWords.txt', myFunction);
 
-alert(descriptiveWords);
-alert (thingWords);
+
+

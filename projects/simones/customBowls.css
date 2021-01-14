@@ -1,79 +1,114 @@
-* {}
-p {
-    margin: 0;
-    color: #605e5e;
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
 }
 body {
-    font-family: 'Poppins', sans-serif;
-    font-size: 1.5em;
-    text-align: center;
     width: 100%;
 }
-.signatureBowls{
-    border-top: double .2em rgb(162, 145, 96);
-    border-bottom: double .2em rgb(162, 145, 96);
-    width: 100%;
-    color: #539982;
-    font-size: 2.5em;
-    font-weight: 800;
-    font-stretch: expanded
+h1, h2, h3, p {
+    margin: 0;
     
 }
-.bowlPriceHeading{
+
+/* bowl heading styles*/
+.bowlHeadingGrid {
+    width: 100vw;
     display: grid;
-    grid-gap: 1em;
-    grid-template-rows: 3em;
-    grid-template-columns: 15em 20em 8em 8em;
+    grid-template-rows: .5em 3.5em .5em;
 }
-.lilBowlHeading{
-    grid-area: 1/3/2/4;
+.BHTopBorder {
+    grid-area: 1/1/2/2;
+    border-top: solid .12em rgb(162, 145, 96);
+    border-bottom: solid .15em rgb(162, 145, 96);
 }
-.bigBowlHeading{
+.bowlHeadingText {
+    grid-area: 2/1/3/2;
+    color: #539982;
+    margin: auto;
+}
+.BHBottomBorder {
+    grid-area: 3/1/4/2;
+    border-top: solid .12em rgb(162, 145, 96);
+    border-bottom: solid .15em rgb(162, 145, 96);
+}
+
+/* bowl pricing styles*/
+.bowlPriceHeading{
+    width: 100vw;
+    display: grid;
+    grid-column-gap: 1em;
+    grid-template-rows: 2em 2em;
+    grid-template-columns: 1fr 15em 20em 8em 8em 1fr;
+}
+
+.bowlPriceHeading img {
+    width: 50%;
+    margin: auto;
+}
+
+.bowlPriceHeading p {
+    text-align: center;
+    margin: auto;
+}
+
+.lilBowlImg {
     grid-area: 1/4/2/5;
+}
+
+.lilBowlText{
+    grid-area: 2/4/3/5;
+}
+
+.bigBowlImg {
+    grid-area: 1/5/2/6;
+}
+
+.bigBowlText {
+    grid-area: 2/5/3/6;
 }
 
 
 /* signature bowl styles*/
 .bowlGrid {
+    width: 100vw;
     display: grid;
     grid-template-rows: 3em 10em;
-    grid-template-columns: 15em 20em 8em 8em;
+    grid-template-columns: 1fr 15em 20em 8em 8em 1fr;
     grid-gap: 1em;
     color: #539982;
+    
 }
 
 .bowlImage {
     /*background-color: #B8336A;*/
-    grid-area: 1/1/3/2;
-    border-right: solid 5px rgb(162, 145, 96);
+    grid-area: 1/2/3/3;
+    border-right: solid .15em rgb(162, 145, 96);
+    justify-content: center;
 }
-.bowl{
-    width: 70%;
+.bowlImage img {
+    width: 80%;
+    padding-top: 1em;
 }
-
 .bowlTitle {
     /*background-color: #726DA8;*/
-    grid-area: 1/2/2/3;
-    font-size: 1.7em;
-    font-weight: 900;
+    grid-area: 1/3/2/4;
+    margin: auto;
 }
 
 .smallPrice {
     /*background-color: #7D8CC4;*/
-    grid-area: 1/3/2/4;
-    font-size: 1.7em;
-    font-weight: 900;
+    grid-area: 1/4/2/5;
+    margin: auto;
 }
 
 .largePrice {
     /*background-color: #A0D2DB;*/
-    grid-area: 1/4/2/5;
-    font-size: 1.7em;
-    font-weight: 900;
+    grid-area: 1/5/2/6;
+    margin: auto;
 }
 
 .bowlDescription {
     /*background-color: #C490D1;*/
-    font-size: .8em;
-    grid-area: 2/2/3/3;
+    grid-area: 2/3/3/4;
+    text-align: left;
 }

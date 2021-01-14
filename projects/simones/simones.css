@@ -1,93 +1,106 @@
 html {
+    font-size: 20px;
+}
+p {
+    margin: 0;
+    color: #605e5e;
 }
 body {
-    }
-    
-/* header styles*/
-header {
-}
-.logo {
-    width: 190px;
-    margin: auto;
-}
-nav{
-    border-style: solid;
-    border-width: 1;
-}
-.nav{
-    display: flex;
-    list-style-type: none;
-}
-.box{
-    width: 12.5%;
-    border-style: solid;
-    border-color: red;
-    border-width: 1;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
 }
-
-/* signature bowls */
-.signatureBowls {
+.signatureBowls{
+    border-top: double .2em rgb(162, 145, 96);
+    border-bottom: double .2em rgb(162, 145, 96);
+    width: 100%;
+    color: #539982;
+    font-size: 2.5em;
+    font-weight: 800;
+    font-stretch: expanded
+    
+}
+/* bowl heading styles*/
+.bowlHeadingGrid {
+    width: 100%;
     display: grid;
-    grid-template-rows: repeat(8, 300px);
-    grid-template-columns: repeat( 4, 25%);
+    grid-template-rows: .5em 3.5em .5em;
+}
+.BHTopBorder {
+    grid-area: 1/1/2/2;
+    border-top: solid .12em rgb(162, 145, 96);
+    border-bottom: solid .15em rgb(162, 145, 96);
+}
+.bowlHeadingText {
+    grid-area: 2/1/3/2;
+     color: #539982;
+    font-size: 2.5em;
+    font-weight: 800;
+}
+.BHBottomBorder {
+    grid-area: 3/1/4/2;
+    border-top: solid .12em rgb(162, 145, 96);
+    border-bottom: solid .15em rgb(162, 145, 96);
 }
 
-#signatureBowls{
-    grid-area: 1 / 1 / 2 / 5;
+/* bowl pricing styles*/
+.bowlPriceHeading{
+    display: grid;
+    grid-gap: 1em;
+    grid-template-rows: 3em;
+    grid-template-columns: 15em 20em 8em 8em;
+}
+.lilBowlHeading{
+    grid-area: 1/3/2/4;
+}
+.bigBowlHeading{
+    grid-area: 1/4/2/5;
+}
+
+
+/* signature bowl styles*/
+.bowlGrid {
+    display: grid;
+    grid-template-rows: 3rem 10rem;
+    grid-template-columns: 15em 20em 8em 8em;
+    grid-gap: 1em;
+    color: #539982;
+}
+
+.bowlImage {
+    /*background-color: #B8336A;*/
+    grid-area: 1/1/3/2;
+    border-right: solid 5px rgb(162, 145, 96);
 }
 .bowl{
-    max-width: 100%;
-    max-height: 100%;
-    
-}
-#tofuBowl{
-    width: 100%;
-    grid-area: 2 / 1 / 3 / 2;
+    width: 70%;
 }
 
-.row {
-    display: flex;
+.bowlTitle {
+    /*background-color: #726DA8;*/
+    grid-area: 1/2/2/3;
+    font-size: 1.7em;
+    font-weight: 900;
 }
 
-.bowlImage{
-    grid-area: 2 / 2 / 5 / 3;
-    border-style: solid;
-    border-color: red;
-    border-width: 1;
-    text-align: center;
-}
-.bowlTitle{
-    grid-area: 2 / 4 / 3 / 5;
-    border-style: solid;
-    border-color: red;
-    border-width: 1;
-    text-align: center;
-}
-.bowlDescription{
-    grid-area: 4 / 4 / 5 / 5;
-    border-style: solid;
-    border-color: red;
-    border-width: 1;
-    text-align: center;
-}
 .smallPrice {
-    grid-area: 2 / 6 / 3 / 7;
-    border-style: solid;
-    border-color: red;
-    border-width: 1;
-    text-align: center;
-}
-.largePrice{
-    grid-area: 2 / 8 / 3 / 9;
-    border-style: solid;
-    border-color: red;
-    border-width: 1;
-    text-align: center;
+    /*background-color: #7D8CC4;*/
+    grid-area: 1/3/2/4;
+    font-size: 1.7em;
+    font-weight: 900;
 }
 
-.signatureBowlGrid{
-    display: grid;
-    grid-template-rows: fr1 fr5 fr1 fr12 fr1;
-    grid-template-columns: fr1 fr20 fr1 fr25 fr1 fr12 fr1 fr12 fr1;
+.largePrice {
+    /*background-color: #A0D2DB;*/
+    grid-area: 1/4/2/5;
+    font-size: 1.7em;
+    font-weight: 900;
+}
+
+.bowlDescription {
+    /*background-color: #C490D1;*/
+    font-size: .8em;
+    grid-area: 2/2/3/3;
 }

@@ -137,11 +137,16 @@ p {
 }
 
 /* sides grid area */
+#sidesContainer {
+    background-color: rgba(83, 153, 130, 0.77);
+    color: #ffffff;
+    text-align: center;
+}
 .sidesTitleGrid {
     display: grid;
     grid-row-template: 10rem;
-    grid-column-template: 20% 20% 40%;
-    margin: 0 20%;
+    grid-column-template: 20vw 20vw 40vw;
+    margin: 0 10vw;
 }
 .salads {
     grid-area: 1/1/2/2;
@@ -155,8 +160,8 @@ p {
 .sidesGrid {
     display: grid;
     grid-row-template: 10rem;
-    grid-column-template: 20% 20% 20% 20%;
-    margin: 0 20%;
+    grid-column-template: 20vw 20vw 20vw 20vw;
+    margin: 0 10vw;
 }
 .kale-quinoaTitle {
     grid-area: 1/1/2/2;

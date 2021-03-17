@@ -169,7 +169,7 @@ p {
 }
 .sidesTitleGrid {
     display: grid;
-    grid-template-rows:7rem;
+    grid-template-rows:5rem;
     grid-template-columns: 25% 25% 50%;
     text-align: center;
 }
@@ -187,7 +187,7 @@ p {
 }
 .sidesGrid {
     display: grid;
-    grid-template-rows: 5rem;
+    grid-template-rows: 3.2rem 6em;
     grid-template-columns: 25% 25% 25% 25%;
 }
 .sideGrid, p {
@@ -196,40 +196,40 @@ p {
 .saladsTitle {
     grid-area: 1/1/2/2;
     border-left: .2rem white solid;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 .saladsDescription {
     grid-area: 2/1/3/2;
     border-left: .2rem white solid;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 .pitzaPiesTitle {
     grid-area: 1/2/2/3;
     border-left: .2rem white solid;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 .pitzaPiesDescription {
     grid-area: 2/2/3/3;
     border-left: .2rem white solid;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 .sidesLeftTitle {
     grid-area: 1/3/2/4;
     border-left: .2rem white solid;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 .sidesLeftDescription {
     grid-area: 2/3/3/4;
     border-left: .2rem white solid;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 .sidesRightTitle {
     grid-area: 1/4/2/5;
     border-right: .2rem white solid;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }
 .sidesRightDescription {
     border-right: .2rem white solid;
     grid-area: 2/4/3/5;
-    padding: 1rem;
+    padding: .5rem 1rem .5rem 1rem;
 }

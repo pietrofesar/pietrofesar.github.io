@@ -62,7 +62,7 @@ p {
     margin: auto auto;
 }
 
-/**/
+/*section heading white background*/
 .sectionHeadingGrid{
     width: 100vw;
     display: grid;
@@ -85,7 +85,29 @@ p {
     border-top: solid .12rem rgb(162, 145, 96);
     border-bottom: solid .15rem rgb(162, 145, 96);
 }
-
+/* greenish heading */
+.sectionHeadingGridGreen{
+    width: 100vw;
+    display: grid;
+    grid-template-rows: .5rem 3.5rem .5rem;
+    background-color: rgba(83, 153, 130, 0.77);
+}
+.sectionHeadingTopGreen{
+    grid-area: 1/1/2/2;
+    border-top: solid .12rem rgb(255, 255, 255);
+    border-bottom: solid .15rem rgb(255, 255, 255);
+}
+.sectionHeadingTextGreen{
+    grid-area: 2/1/3/2;
+    text-align: center;
+    color: #ffffff;
+    margin: .3rem 0 0 0;
+}
+.sectionHeadingBottomGreen{
+    grid-area: 3/1/4/2;
+    border-top: solid .12rem rgb(255, 255, 255);
+    border-bottom: solid .15rem rgb(255, 255, 255);
+}
 /* bowlSizesHeading */
 #bowlSizesHeading{
     display: grid;

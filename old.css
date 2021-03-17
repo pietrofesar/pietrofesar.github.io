@@ -166,42 +166,42 @@ p {
 .sideGrid, p {
     color: black;
 }
-.saladsTitle {
+.kale-quinoaTitle {
     grid-area: 1/1/2/2;
     border-left: .2rem white solid;
     padding: 1rem;
 }
-.saladsDescription {
+.kale-quinoaDescription {
     grid-area: 2/1/3/2;
     border-left: .2rem white solid;
     padding: 1rem;
 }
-.pitzaPiesTitle {
+.zaatarTitle {
     grid-area: 1/2/2/3;
     border-left: .2rem white solid;
     padding: 1rem;
 }
-.pitzaPiesDescription {
+.zaatarDescription {
     grid-area: 2/2/3/3;
     border-left: .2rem white solid;
     padding: 1rem;
 }
-.sidesLeftTitle {
+.falafelSnackTitle {
     grid-area: 1/3/2/4;
     border-left: .2rem white solid;
     padding: 1rem;
 }
-.sidesLeftDescription {
+.falafelSnackDescription {
     grid-area: 2/3/3/4;
     border-left: .2rem white solid;
     padding: 1rem;
 }
-.sidesRightTitle {
+.grapeLeavesTitle {
     grid-area: 1/4/2/5;
     border-right: .2rem white solid;
     padding: 1rem;
 }
-.sidesRightDescription {
+.grapeLeavesDescription {
     border-right: .2rem white solid;
     grid-area: 2/4/3/5;
     padding: 1rem;

@@ -141,49 +141,60 @@ p {
     background-color: rgba(83, 153, 130, 0.77);
     color: #ffffff;
     text-align: center;
+    padding: 0 10rem;
+    height: 1000px;
 }
 .sidesTitleGrid {
     display: grid;
-    grid-row-template: 10rem;
-    grid-column-template: 20vw 20vw 40vw;
-    margin: 0 10vw;
+    grid-row-template: 15rem;
+    grid-column-template: 25% 25% 50%;
 }
 .salads {
     grid-area: 1/1/2/2;
+    border: solid black 1px;
 }
 .pitzaPies {
     grid-area: 1/2/2/3;
+    border: solid black 1px;
 }
 .sides {
     grid-area: 1/3/2/5;
+    border: solid black 1px;
 }
 .sidesGrid {
     display: grid;
     grid-row-template: 10rem;
-    grid-column-template: 20vw 20vw 20vw 20vw;
-    margin: 0 10vw;
+    grid-column-template: 25% 25% 25% 25%;
 }
 .kale-quinoaTitle {
     grid-area: 1/1/2/2;
+    border: solid black 1px;
 }
 .kale-quinoaDescription {
     grid-area: 2/1/3/2;
+    border: solid black 1px;
 }
 .zaatarTitle {
     grid-area: 1/2/2/3;
+    border: solid black 1px;
 }
 .zaatarDescription {
     grid-area: 2/2/3/3;
+    border: solid black 1px;
 }
 .falafelSnackTitle {
     grid-area: 1/3/2/4;
+    border: solid black 1px;
 }
 .falafelSnackDescription {
     grid-area: 2/3/3/4;
+    border: solid black 1px;
 }
 .grapeLeavesTitle {
     grid-area: 1/4/2/5;
+    border: solid black 1px;
 }
 .grapeLeavesDescription {
     grid-area: 2/4/3/5;
+    border: solid black 1px;
 }

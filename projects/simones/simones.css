@@ -43,6 +43,8 @@ p {
 /* create your own bowl (cyob) */
 #cyob {
     background-image: url("images/cyobBG.png");
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-rows:10rem 10rem 35rem;
     grid-template-columns: 80% 20%;
@@ -76,6 +78,7 @@ p {
     grid-area: 2/1/3/2;
     text-align: center;
     color: #539982;
+    margin: .3rem 0 0 0;
 }
 .sectionHeadingBottom{
     grid-area: 3/1/4/2;

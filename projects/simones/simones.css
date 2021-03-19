@@ -114,7 +114,7 @@ p {
 #bowlSizesHeading{
     display: grid;
     grid-template-rows: 5rem;
-    grid-template-columns: 30% 40% 15% 15%;
+    grid-template-columns: 28% 45% 13.9% 13.9%;
     margin: 0 13rem 0 13rem;
     text-align: center;
 }
@@ -129,7 +129,7 @@ p {
 .sigBowlItem{
     display: grid;
     grid-template-rows: 3rem 8rem;
-    grid-template-columns: 25% 45% 15% 15%;
+    grid-template-columns: 28% 45% 13.9% 13.9%;
     margin: 0 13rem 0 13rem;
     text-align: center;
     color: #00604c;

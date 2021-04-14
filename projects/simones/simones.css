@@ -79,7 +79,8 @@ p {
 .sectionHeadingText{
     grid-area: 2/1/3/2;
     text-align: center;
-    color: #539982;
+    /*color: #539982;*/
+    color: #00604c;
     margin: .3rem 0 0 0;
 }
 .sectionHeadingBottom{
@@ -120,9 +121,11 @@ p {
 }
 #lilBowl{
     grid-area: 1/3/2/4;
+    padding-top: 1rem;
 }
 #bigBowl{
     grid-area: 1/4/2/5;
+    padding-top: 1rem;
 }
 
 /* sigBowlItem */
@@ -232,4 +235,39 @@ p {
     border-right: .2rem white solid;
     grid-area: 2/4/3/5;
     padding: .5rem 1rem .5rem 1rem;
+}
+/* beverages grid */
+#beveragesContainer {
+    
+}
+#beveragesHeadingGrid {
+    display: grid;
+    grid-template-rows: 5rem;
+    grid-template-columns: 40% 45% 15%;
+    margin: 0 13rem 0 13rem;
+}
+#beveragesHeading {
+    grid-area: 1/2/2/3;
+}
+#beveragesPriceHeading {
+    grid-area: 1/3/2/4;
+}
+.beveragesItemGrid {
+    display: grid;
+    grid-template-rows: 6rem;
+    grid-template-columns: 40% 45% 15%;
+    margin: 0 13rem 0 13rem;
+}
+.beveragesImage img {
+    display: block;
+    margin: 0 10rem 0 auto;
+    width:100px;
+}
+.beveragesTitle {
+    padding-top: 1rem;
+    color: #00604c;
+}
+.beveragesPrice {
+    padding-top: 1rem;
+    color: #00604c;
 }
